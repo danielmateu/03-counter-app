@@ -1,17 +1,28 @@
+// ANTES
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import  ReactDOM  from 'react-dom';
+// import PrimeraApp from './PrimeraApp';
+import './index.css'
+import { CounterApp } from './CounterApp';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const divRoot = document.getElementById('root');
+
+// ReactDOM.render( <PrimeraApp saludo = 'Dani'/>, divRoot);
+ReactDOM.render( <CounterApp counter = {0}/>, divRoot);
+
+//React 18
+
+// import React from 'react';
+// import { createRoot } from 'react-dom/client';
+// // import PrimeraApp from './PrimeraApp';
+// import './index.css'
+// import { CounterApp } from './CounterApp';
+
+
+// const divRoot = document.getElementById('root');
+// const root = createRoot(divRoot);
+
+// // root.render( <PrimeraApp saludo = 'Hola, Soy Dani' subtitulo = 'Soy un subtitulo 💀'/>);
+// root.render( <CounterApp counter = {0}/>);
